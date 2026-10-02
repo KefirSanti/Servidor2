@@ -111,6 +111,11 @@ header{position:sticky;top:0;z-index:50;background:rgba(241,233,216,0.9);backdro
 .estudio-card .lista-check li{font-size:14.5px;color:var(--tinta-suave);padding:5px 0;}
 .estudio-card img{width:100%;border-radius:14px;display:block;margin-bottom:18px;box-shadow:0 12px 26px rgba(38,33,15,0.1);}
 .estudio-card .ver-completo{display:inline-block;font-size:14px;font-weight:600;color:var(--verde);border-bottom:1.5px solid var(--verde);padding-bottom:2px;}
+.numero-grande{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(52px,9vw,76px);line-height:1;color:var(--tinta);margin:12px 0 22px;}
+.conservar-linea{display:flex;align-items:center;gap:14px;margin:24px 0 20px;}
+.conservar-linea svg{flex-shrink:0;}
+.conservar-linea .divisor{width:1px;align-self:stretch;background:rgba(38,33,15,0.2);flex-shrink:0;}
+.conservar-linea span.texto{font-size:12.5px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--verde);line-height:1.4;}
 
 /* ---------- CONSERVACIÓN ---------- */
 .conservacion{padding:80px 24px;text-align:center;background:var(--verde-oscuro);}
@@ -284,11 +289,15 @@ footer{background:var(--tinta);color:var(--hueso);padding:90px 24px 40px;}
 
       <!-- 9. VIDA DE ANAQUEL -->
       <div class="estudio-card">
-        <h3>Vida de anaquel</h3>
-        <p class="resultado" style="font-style:italic;color:var(--dorado);margin-bottom:12px;">21 días.</p>
+        <span class="eyebrow">Vida de anaquel</span>
+        <p class="numero-grande">21 días.</p>
         <p class="resultado">Determinados mediante un estudio de vida de anaquel realizado por un laboratorio especializado.</p>
         <p class="resultado">Durante el estudio se evaluó la estabilidad del producto bajo condiciones de conservación refrigerada.</p>
-        <p class="resultado"><strong>Conservar entre 2 y 6 °C.</strong></p>
+        <div class="conservar-linea">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--verde)" stroke-width="1.6"><path d="M12 2v20M4.5 6l15 12M19.5 6l-15 12M5 12h14M12 2l2.2 2.2M12 2l-2.2 2.2M12 22l2.2-2.2M12 22l-2.2-2.2"/></svg>
+          <span class="divisor"></span>
+          <span class="texto">Conservar entre<br>2 y 6 °C.</span>
+        </div>
         <img src="estudio-vida-anaquel.jpg" alt="Botellas de Santí Kéfir en refrigeración junto a los informes de resultados del laboratorio Becar">
       </div>
 
