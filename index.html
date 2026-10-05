@@ -141,8 +141,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(241,233,216,0.9);backdro
 .pregunta .respuesta{padding:0 24px 22px;font-size:15px;color:var(--tinta-suave);max-width:65ch;}
 
 /* ---------- RESEÑAS ---------- */
-.resenas{padding:150px 24px;text-align:center;}
-.resenas p{font-family:'Fraunces',serif;font-style:italic;font-size:19px;color:var(--tinta);margin-bottom:22px;max-width:40ch;margin-left:auto;margin-right:auto;}
+.resenas{padding:70px 24px 130px;text-align:center;}
+.resenas .pregunta{font-family:'Fraunces',serif;font-style:normal;font-weight:600;font-size:24px;color:var(--tinta);margin:0 auto 8px;max-width:40ch;}
+.resenas .sub{font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:16px;color:var(--tinta-suave);margin:0 auto 22px;max-width:40ch;}
 .resenas .boton-discreto{font-size:13.5px;font-weight:600;color:var(--tinta);border:1.5px solid rgba(38,33,15,0.25);border-radius:100px;padding:12px 26px;display:inline-block;transition:border-color .2s ease;}
 .resenas .boton-discreto:hover{border-color:var(--tinta);}
 
@@ -303,14 +304,15 @@ footer{background:var(--tinta);color:var(--hueso);padding:90px 24px 40px;}
 <section class="disfrutar" id="disfrutar">
   <div class="contenedor-angosto">
     <span class="eyebrow">Cómo disfrutar Santí</span>
-    <h2>Tan simple como quieras.</h2>
-    <p>Solo y bien frío, con fruta, granola o en un smoothie.</p>
+    <h2>Hazlo parte de tu día.</h2>
+    <p>Solo y bien frío, con fruta, granola, en un smoothie o en tus recetas favoritas.</p>
   </div>
 </section>
 
 <!-- 13. RESEÑA -->
 <section class="resenas">
-  <p>¿Ya probaste Santí? Nos encantará conocer tu experiencia.</p>
+  <p class="pregunta">¿Ya probaste Santí?</p>
+  <p class="sub">Nos encantará conocer tu experiencia.</p>
   <a href="https://wa.me/528712668242" class="boton-discreto">Deja tu reseña</a>
 </section>
 
